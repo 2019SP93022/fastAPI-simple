@@ -5,6 +5,9 @@ pipeline {
       steps {
         echo 'build step started'
         sh 'find'
+        sh 'git log'
+        sh '''cat Dockerfile
+'''
       }
     }
 
